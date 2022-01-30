@@ -1,15 +1,16 @@
 const express =  require('express');
 const serverless = require('serverless-http');
 const cors = require('cors');
-const suma = require('./suma');
 const app = express();
 const router = express.Router();
+const {suma} = require('./suma');
 app.use(cors())
 
 router.get('/', cors(), (req, res) => {
 
-    const numero = suma;
-
+    const numero = exports.handler = async(event) => {
+        suma();
+    }
 
     res.json(
         [

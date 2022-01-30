@@ -1,5 +1,3 @@
-const suma = () => {
+exports.suma = () => {
     return 24
 }
-
-module.exports = suma;
