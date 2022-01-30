@@ -10,7 +10,7 @@ router.get('/', cors(), (req, res) => {
         [
             {
                 'id': '001',
-                'name': 'Will Smith',
+                'name': 'Will',
                 'email': 'smith@gmail.com'
             },
             {
