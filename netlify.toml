@@ -2,11 +2,11 @@
     functions="functions"
 
 [[redirects]]
-    to="/.netlify/functions/api:splat"
     from="/*"
+    to="/.netlify/functions/api:splat"
     status=200 
 
 [[redirects]]
-    to="/.netlify/functions/api:splat"
     from="/item"
+    to="/.netlify/functions/api:splat"
     status=200 
