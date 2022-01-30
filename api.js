@@ -10,17 +10,17 @@ router.get('/', cors(), (req, res) => {
         [
             {
                 'id': '001',
-                'name': 'Smith',
+                'name': 'Will Smith',
                 'email': 'smith@gmail.com'
             },
             {
                 'id': '002',
-                'name': 'Sam',
+                'name': 'Sam Raimi',
                 'email': 'sam@gmail.com'
             },
             {
                 'id': '003',
-                'name': 'lily',
+                'name': 'lily Hoop',
                 'email': 'lily@gmail.com'
             }
         ]
