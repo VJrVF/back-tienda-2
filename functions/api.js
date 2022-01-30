@@ -1,13 +1,14 @@
 const express =  require('express');
 const serverless = require('serverless-http');
 const cors = require('cors');
+const suma = require('./suma');
 const app = express();
 const router = express.Router();
 app.use(cors())
 
 router.get('/', cors(), (req, res) => {
 
-    const numero = 12+12;
+    const numero = suma;
 
 
     res.json(
