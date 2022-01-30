@@ -7,11 +7,13 @@ app.use(cors())
 
 router.get('/', cors(), (req, res) => {
 
+    const numero = 12+12;
+
 
     res.json(
         [
             {
-                'id': '001',
+                'id': numero,
                 'name': 'Will',
                 'email': 'smith@gmail.com'
             },
@@ -29,29 +31,29 @@ router.get('/', cors(), (req, res) => {
     )
 })
 
-router.get('/item', cors(), (req, res) => {
+// router.get('/item', cors(), (req, res) => {
 
     
-    res.json(
-        [
-            {
-                'id': '001',
-                'name': 'Gaara',
-                'email': 'smith@gmail.com'
-            },
-            {
-                'id': '002',
-                'name': 'Sasuke',
-                'email': 'sam@gmail.com'
-            },
-            {
-                'id': '003',
-                'name': 'Naruto',
-                'email': 'lily@gmail.com'
-            }
-        ]
-    )
-})
+//     res.json(
+//         [
+//             {
+//                 'id': '001',
+//                 'name': 'Gaara',
+//                 'email': 'smith@gmail.com'
+//             },
+//             {
+//                 'id': '002',
+//                 'name': 'Sasuke',
+//                 'email': 'sam@gmail.com'
+//             },
+//             {
+//                 'id': '003',
+//                 'name': 'Naruto',
+//                 'email': 'lily@gmail.com'
+//             }
+//         ]
+//     )
+// })
 
 app.use('/', router);
 module.exports.handler = serverless(app);
