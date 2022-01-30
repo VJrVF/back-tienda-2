@@ -3,5 +3,10 @@
 
 [[redirects]]
     to="/.netlify/functions/api:splat"
-    from="/*"
+    from="/"
+    status=200 
+
+[[redirects]]
+    to="/.netlify/functions/api:splat"
+    from="/item"
     status=200 
